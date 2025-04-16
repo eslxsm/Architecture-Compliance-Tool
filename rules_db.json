@@ -1,0 +1,47 @@
+[
+  {
+    "type": "setback",
+    "region": "Kerala",
+    "district": "Ernakulam",
+    "building_type": "mall",
+    "road_width_min": 6,
+    "value_m": 6,
+    "source": "KMBR 2019 – Sec 25.2"
+  },
+  {
+    "type": "far",
+    "region": "Kerala",
+    "district": null,
+    "building_type": "mall",
+    "value": 2.5,
+    "source": "KMBR 2019 – Sec 22"
+  },
+  {
+    "type": "occupancy_load",
+    "region": "India",
+    "district": null,
+    "building_type": "mall",
+    "equation": "floor_area / 3",
+    "unit": "persons",
+    "source": "NBC Part 4 – Table 1"
+  },
+  {
+    "type": "toilets",
+    "region": "India",
+    "district": null,
+    "building_type": "mall",
+    "equation": {
+      "male": "occupancy / 25",
+      "female": "occupancy / 15"
+    },
+    "source": "NBC Part 9 – Sanitation"
+  },
+  {
+    "type": "parking",
+    "region": "Kerala",
+    "district": null,
+    "building_type": "mall",
+    "value": "1 space per 50 sqm built-up area",
+    "source": "KMBR Sec 27.3"
+  }
+]

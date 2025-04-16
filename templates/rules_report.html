@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rules for {{ building_type }}</title>
+</head>
+<body>
+  <h2>📘 Rules for {{ building_type.capitalize() }}</h2>
+
+  {% for rule in rules %}
+    <div style="margin-bottom: 15px;">
+      <strong>🔹 {{ rule.type | capitalize }}</strong><br>
+      {% if rule.value_m %}
+        ➤ Value: {{ rule.value_m }} meters<br>
+      {% elif rule.value %}
+        ➤ Value: {{ rule.value }}<br>
+      {% elif rule.equation %}
+        ➤ Equation: 
+        {% if rule.equation.male %}
+          Male = {{ rule.equation.male }}, Female = {{ rule.equation.female }}<br>
+        {% else %}
+          {{ rule.equation }}<br>
+        {% endif %}
+      {% endif %}
+      📚 Source: {{ rule.source }}
+    </div>
+  {% endfor %}
+
+  <a href="/">🔙 Back</a>
+</body>
+</html>

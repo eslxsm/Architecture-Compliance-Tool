@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🧠 Building Code Rule Finder</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('{{ url_for('static', filename='bp.jpg') }}') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #2c3e50;
+    }
+
+    form label, .calculators label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    select, button, input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      font-weight: 600;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #16a085;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .calculator-links {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .calculator-links a {
+      display: block;
+      color: #1abc9c;
+      text-decoration: none;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .calculator-links a:hover {
+      color: #16a085;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🧠 Building Code Rule Finder</h1>
+
+    <form id="ruleForm">
+      <label for="region">📍 Region (State):</label>
+      <select name="region" id="region">
+        <option value="kerala">Kerala</option>
+      </select>
+
+      <label for="building_type">🏢 Building Type:</label>
+      <select name="building_type" id="building_type">
+        <option value="residential">Residential (A1)</option>
+        <option value="lodging">Lodging (A2)</option>
+        <option value="educational">Educational (B)</option>
+        <option value="hospital">Hospital (C)</option>
+        <option value="assembly">Assembly (D)</option>
+        <option value="office">Office (E)</option>
+        <option value="mall">Mall (F)</option>
+        <option value="mercantile">Mercantile (F-other)</option>
+        <option value="industrial">Industrial (G1/G2)</option>
+        <option value="storage">Storage (H)</option>
+        <option value="hazardous">Hazardous (I)</option>
+        <option value="multiplex">Multiplex (J)</option>
+        <option value="temporary_structures">Temporary Structures</option>
+      </select>
+
+      <button type="submit">🔍 Get Rules</button>
+    </form>
+
+    <div class="calculator-links">
+      <label>🧮 Calculators:</label>
+      <a href="/calculator/fsi">📐 FSI Calculator</a>
+      <a href="/calculator/parking">🚗 Parking Calculator</a>
+      <a href="/calculator/setback">📏 Setback Calculator</a>
+      <a href="/calculator/toilet">🚻 Toilet Calculator</a>
+      <a href="/calculator/coverage">📍 Coverage Calculator</a>
+    </div>
+
+    <div class="footer">Made with 💡 for Architecture Students</div>
+  </div>
+
+  <script>
+    document.getElementById("ruleForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const buildingType = document.getElementById("building_type").value.toLowerCase();
+      window.location.href = "/building/" + buildingType;
+    });
+  </script>
+</body>
+</html>

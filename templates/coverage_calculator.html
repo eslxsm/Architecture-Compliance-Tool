@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>📍 Coverage Calculator</title>
+</head>
+<body>
+  <h2>📍 Coverage Calculator</h2>
+  <form method="POST">
+    <label>Plot Area (sqm):</label>
+    <input type="number" step="0.1" name="plot_area" required>
+
+    <label>Built-up Area (sqm):</label>
+    <input type="number" step="0.1" name="builtup_area" required>
+
+    <button type="submit">Calculate</button>
+  </form>
+
+  {% if result is not none %}
+    <h3>🧮 Site Coverage: {{ result }}%</h3>
+  {% endif %}
+
+  <br><a href="/">🔙 Home</a>
+</body>
+</html>

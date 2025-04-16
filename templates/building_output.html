@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>📘 Rules for {{ building_type|capitalize }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>📘 Rules for {{ building_type|capitalize }}</h1>
+
+    <div class="rule-section">
+      {% for rule in rules %}
+        <div class="rule-card">
+          <div class="rule-type">🔹 {{ rule.type|replace("_", " ")|capitalize }}</div>
+          {% if rule.value %}
+            <div class="rule-value">➤ {{ rule.value }}</div>
+          {% elif rule.equation %}
+            <div class="rule-value">
+              {% for key, eq in rule.equation.items() %}
+                ➤ {{ key|capitalize }} = {{ eq }}<br>
+              {% endfor %}
+            </div>
+          {% endif %}
+          <div class="rule-source">📚 Source: {{ rule.source }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

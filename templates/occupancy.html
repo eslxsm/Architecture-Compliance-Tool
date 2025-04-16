@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>👥 Occupancy Load Calculator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>👥 Occupancy Load Calculator</h1>
+    <form method="post">
+      <label for="floor_area">Total Floor Area (in sqm):</label>
+      <input type="number" name="floor_area" step="0.1" required>
+
+      <label for="usage">Building Usage Type:</label>
+      <select name="usage" required>
+        <option value="assembly">Assembly (e.g. Auditorium)</option>
+        <option value="educational">Educational</option>
+        <option value="residential">Residential</option>
+        <option value="business">Business / Office</option>
+        <option value="mercantile">Mercantile / Mall</option>
+        <option value="industrial">Industrial</option>
+      </select>
+
+      <button type="submit">Calculate Occupancy</button>
+    </form>
+
+    {% if result %}
+      <div class="result-box">
+        <h2>🧮 Result</h2>
+        <p>🔹 Estimated Occupancy Load: <strong>{{ result }}</strong> persons</p>
+      </div>
+    {% endif %}
+
+    <div style="margin-top: 20px;">
+      <a href="/" style="text-decoration: none; color: #007bff;">⬅️ Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>

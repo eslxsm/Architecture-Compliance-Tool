@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rules by Topic</title>
+</head>
+<body>
+  <h1>📂 Rules for Topic: {{ topic.capitalize() }}</h1>
+
+  {% for rule in rules %}
+    <div style="margin-bottom: 15px;">
+      <strong>🏢 Applies To: {{ rule.applies_to | join(', ') }}</strong><br>
+      {% if rule.value %}
+        ➤ Value: {{ rule.value }}<br>
+      {% elif rule.equation %}
+        ➤ Equation: {{ rule.equation }}<br>
+      {% endif %}
+      📚 Source: {{ rule.source }}
+    </div>
+  {% endfor %}
+
+  <a href="/">🔙 Back</a>
+</body>
+</html>

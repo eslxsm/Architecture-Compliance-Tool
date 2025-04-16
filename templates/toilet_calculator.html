@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🚻 Toilet Calculator</title>
+</head>
+<body>
+  <h2>🚻 Toilet Calculator</h2>
+  <form method="POST">
+    <label>Number of Occupants:</label>
+    <input type="number" name="occupants" required>
+    <button type="submit">Calculate</button>
+  </form>
+
+  {% if result %}
+    <h3>🧮 Result:</h3>
+    <p>🚹 Male Toilets: {{ result.male }}</p>
+    <p>🚺 Female Toilets: {{ result.female }}</p>
+  {% endif %}
+
+  <br><a href="/">🔙 Home</a>
+</body>
+</html>

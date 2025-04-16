@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parking Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #eef6f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #16a085;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-weight: 500;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h2>🅿️ Parking Requirement Calculator</h2>
+
+    <label for="area">Total Built-up Area (in sqm):</label>
+    <input type="number" id="area" placeholder="e.g. 3000">
+
+    <label for="building">Building Type:</label>
+    <select id="building">
+      <option value="residential">Residential</option>
+      <option value="hospital">Hospital</option>
+      <option value="mall">Mall</option>
+      <option value="office">Office</option>
+      <option value="industrial">Industrial</option>
+    </select>
+
+    <button onclick="calculateParking()">Calculate</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function calculateParking() {
+      const area = parseFloat(document.getElementById("area").value);
+      const building = document.getElementById("building").value;
+      let result = 0;
+
+      if (isNaN(area) || area <= 0) {
+        document.getElementById("result").innerText = "Please enter a valid area.";
+        return;
+      }
+
+      switch (building) {
+        case "residential":
+          result = area / 75;
+          break;
+        case "hospital":
+          result = area / 60;
+          break;
+        case "mall":
+          result = area <= 1260 ? area / 90 : (1260 / 90 + (area - 1260) / 60);
+          break;
+        case "office":
+          result = area / 75;
+          break;
+        case "industrial":
+          result = area / 150;
+          break;
+        default:
+          result = 0;
+      }
+
+      document.getElementById("result").innerText = `Estimated Parking Spaces: ${Math.ceil(result)}`;
+    }
+  </script>
+</body>
+</html>

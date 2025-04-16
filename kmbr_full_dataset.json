@@ -1,0 +1,1170 @@
+{
+    "building_types": {
+        "residential": [
+  {
+    "type": "setback",
+    "value": "Front: 3m, Rear: 1.5m, Sides: 1.5m; Add 0.5m for every 3m above 10m",
+    "source": "KMBR Rule 25"
+  },
+  {
+    "type": "coverage",
+    "value": "Max 65% plot coverage",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "far",
+    "value": "F.S.I. up to 3 without fee, 4 with additional fee",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "parking",
+    "value": "1 car space per 75 sqm built-up area; 1 visitor space per 10 units",
+    "source": "KMBR Table 9 – Group A1"
+  },
+  {
+    "type": "recreational_space",
+    "value": "6% of built-up area for apartments >12 units; 35% must be on ground",
+    "source": "KMBR Rule 43"
+  },
+  {
+    "type": "accessibility",
+    "value": "Ramp slope 1:12, Door width 90cm, Toilet size ≥ 1.5m x 1.75m",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Fire escape staircases, fire alarms, and extinguishers mandatory for buildings over 15m height",
+    "source": "NBC Part 4 – Fire Safety"
+  },
+  {
+    "type": "stp",
+    "value": "STP required for plots over 5000 sqm or as per PCB norms",
+    "source": "KMBR Rule 27.5"
+  },
+  {
+    "type": "height_limit",
+    "value": "Maximum building height = 2 × road width unless special approval. Heights above 15m require fire clearance",
+    "source": "KMBR Rule 17"
+  },
+  {
+    "type": "light_ventilation",
+    "value": "Minimum 1/10th of floor area must be openable windows for natural lighting and ventilation",
+    "source": "NBC Part 8 – Lighting & Ventilation"
+  },
+  {
+    "type": "plot_access",
+    "value": "Minimum 3m wide access for plots <300 sqm, 5m for ≥300 sqm",
+    "source": "KMBR Rule 13.5"
+  },
+  {
+    "type": "staircase_specifications",
+    "value": "Stair width ≥ 1m, riser ≤ 18cm, tread ≥ 25cm; handrails mandatory for floors above 1.5m",
+    "source": "NBC Part 4"
+  },
+  {
+    "type": "rainwater_harvesting",
+    "value": "Mandatory for all plots above 200 sqm",
+    "source": "KMBR Rule 33B"
+  },
+  {
+    "type": "structural_safety",
+    "value": "Must comply with seismic, flood, and cyclone zone requirements as per NBC Part 6",
+    "source": "NBC Part 6 – Structural Design"
+  },
+  {
+    "type": "electrical_room",
+    "value": "Required for buildings with lift or multiple apartments; must be separated from water storage areas",
+    "source": "NBC Part 8"
+  },
+  {
+    "type": "plumbing_drainage",
+    "value": "Minimum 7.5m distance between septic tank and wells; soak pit capacity as per soil type",
+    "source": "KMBR Plumbing + NBC Part 9"
+  }
+],
+  "lodging": [
+  {
+    "type": "setback",
+    "value": "Front: 6m; Sides/Rear: 3m minimum; Add 0.5m for every 3m above 10m height",
+    "source": "KMBR Rule 25"
+  },
+  {
+    "type": "coverage",
+    "value": "Max 60% of the plot area",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "far",
+    "value": "F.S.I. up to 3.5; additional allowed with premium",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "parking",
+    "value": "1 parking space per 3 rooms; 1 visitor parking per 10 rooms",
+    "source": "KMBR Table 10 – Group A2"
+  },
+  {
+    "type": "toilets",
+    "equation": {
+      "guest": "1 per 2 rooms",
+      "staff": "1 per 25 male staff; 1 per 15 female staff"
+    },
+    "source": "NBC Part 9 – Sanitation"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Minimum 2 staircases, smoke detectors in corridors, fire lift mandatory for buildings over 15m height, fire alarms and hydrants as per NBC",
+    "source": "NBC Part 4 – Fire Safety"
+  },
+  {
+    "type": "accessibility",
+    "value": "Accessible lift, 1 accessible toilet per floor (1.5m x 1.75m), ramp slope 1:12, minimum 1.2m width",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "stp",
+    "value": "STP mandatory for lodging facilities over 5000 sqm or as per Pollution Control Board norms",
+    "source": "KMBR Rule 27.5"
+  },
+  {
+    "type": "lighting_ventilation",
+    "value": "Minimum 1/10th of floor area to be provided for lighting & ventilation; natural cross-ventilation recommended",
+    "source": "NBC Part 8"
+  },
+  {
+    "type": "drainage",
+    "value": "Rainwater must be directed to percolation pits or recharge wells; stormwater should not be connected to the sewer",
+    "source": "KMBR Rule 28"
+  },
+  {
+    "type": "basement_use",
+    "value": "Basement permitted only for parking, storage, HVAC and services; not for guest rooms or habitable use",
+    "source": "KMBR Rule 30"
+  },
+  {
+    "type": "energy_compliance",
+    "value": "Mandatory ECBC compliance if built-up area exceeds 1000 sqm",
+    "source": "KMBR Rule 5(5)"
+  },
+  {
+    "type": "signage",
+    "value": "Directional and room signage required; emergency exit signage mandatory with illumination",
+    "source": "NBC + KMBR Rule 38.2"
+  },
+  {
+    "type": "rainwater_harvesting",
+    "value": "Mandatory for plots ≥ 200 sqm; collection and recharge system to be included in layout plan",
+    "source": "KMBR Rule 28.2"
+  }
+],
+
+
+"hospital": [
+  {
+    "type": "setback",
+    "value": "Front: 6m; Sides/Rear: 3m minimum; Add 0.5m every 3m above 10m",
+    "source": "KMBR Rule 25"
+  },
+  {
+    "type": "coverage",
+    "value": "Max 50% of plot area",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "far",
+    "value": "F.S.I. up to 2.5 without fee, 3.5 with additional premium",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "parking",
+    "value": "1 space per 3 beds or per 60 sqm built-up area; 1 visitor parking per 10 beds",
+    "source": "KMBR Table 10 – Group C"
+  },
+  {
+    "type": "toilets",
+    "equation": {
+      "inpatients": "1 per 8 beds",
+      "outpatients": "1 per 100 males, 2 per 100 females",
+      "staff": "1 per 25 male, 1 per 15 female"
+    },
+    "source": "NBC Part 9 – Table 15"
+  },
+  {
+    "type": "wash_basins",
+    "value": "2 for up to 30 beds; 1 extra for every additional 30 beds",
+    "source": "NBC Part 9"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Fire lifts, fire exits, hydrants, smoke alarms, min 2 staircases mandatory for buildings above 15m",
+    "source": "NBC Part 4 – Fire Safety"
+  },
+  {
+    "type": "accessibility",
+    "value": "Accessible toilets, stretchers-compatible lifts (min size 1.1m x 2.0m), ramps 1:12 slope and 1.2m width",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "lift_specifications",
+    "value": "Stretcher-compatible lifts must be provided; minimum lift cabin 1.1m wide x 2.0m deep",
+    "source": "NBC Part 3"
+  },
+  {
+    "type": "energy_compliance",
+    "value": "Hospitals >1000 sqm must comply with ECBC (Energy Conservation Building Code)",
+    "source": "KMBR Rule 5(5)"
+  },
+  {
+    "type": "stp",
+    "value": "STP mandatory for hospitals over 5000 sqm built-up or as per PCB norms",
+    "source": "KMBR Rule 27.5"
+  },
+  {
+    "type": "ventilation",
+    "value": "Cross ventilation and minimum 1/10th floor area as window opening; mechanical ventilation for OT/ICU",
+    "source": "NBC Part 8 – Lighting & Ventilation"
+  },
+  {
+    "type": "basement_use",
+    "value": "Permitted for parking, services, HVAC; not allowed for patient rooms or treatment areas",
+    "source": "KMBR Rule 30"
+  },
+  {
+    "type": "drainage",
+    "value": "Separate drainage system for medical & domestic waste; no mixing with storm drains",
+    "source": "KMBR Rule 28"
+  },
+  {
+    "type": "bio_medical_waste",
+    "value": "Hospitals must have dedicated biomedical waste storage and disposal facility",
+    "source": "Bio-Medical Waste Management Rules, 2016"
+  },
+  {
+    "type": "signage",
+    "value": "Clear signage for emergency, exits, departments; Braille signage for visually impaired recommended",
+    "source": "NBC + Disability Act Guidelines"
+  },
+  {
+    "type": "oxygen_supply",
+    "value": "Centralized oxygen and medical gas pipelines must be planned for >20-bed hospitals",
+    "source": "NBC Part 4"
+  },
+  {
+    "type": "rainwater_harvesting",
+    "value": "Mandatory for plots >200 sqm; recharge pits or tank system required",
+    "source": "KMBR Rule 28.2"
+  }
+],
+
+"mall": [
+  {
+    "type": "setback",
+    "value": "Minimum front setback 6m; Side/rear setbacks: 3m minimum; Add 0.5m per 3m height above 10m",
+    "source": "KMBR Rule 25"
+  },
+  {
+    "type": "coverage",
+    "value": "Maximum 65% of plot area",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "far",
+    "value": "F.S.I. up to 3 without fee; up to 4 with premium",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "parking",
+    "equation": "area <= 1260 ? area / 90 : (1260 / 90 + (area - 1260) / 60)",
+    "unit": "spaces",
+    "source": "KMBR Table 10 – Group F"
+  },
+  {
+    "type": "loading_bay",
+    "equation": "(max(0, (area - 700)) / 1000)",
+    "unit": "1 per 1000 sqm after first 700 sqm",
+    "source": "KMBR Rule 29"
+  },
+  {
+    "type": "toilets",
+    "equation": {
+      "male": "occupancy / 25",
+      "female": "occupancy / 15"
+    },
+    "source": "NBC Part 9 – Sanitation"
+  },
+  {
+    "type": "occupancy_load",
+    "equation": "floor_area / 3",
+    "unit": "persons",
+    "source": "NBC Part 4 – Table 1"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Fire lift mandatory above 15m; Min 2 staircases, sprinkler system, smoke detectors, fire alarms, hydrants",
+    "source": "NBC Part 4 – Fire Safety"
+  },
+  {
+    "type": "stp",
+    "value": "Mandatory for malls over 5000 sqm or as per Pollution Control Board guidelines",
+    "source": "KMBR Rule 27.5"
+  },
+  {
+    "type": "accessibility",
+    "value": "Ramps slope 1:12; Minimum lift 1.1m wide × 2.0m deep; Accessible toilets on each floor",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "energy_compliance",
+    "value": "ECBC compliance mandatory for buildings over 1000 sqm",
+    "source": "KMBR Rule 5(5)"
+  },
+  {
+    "type": "lift_specifications",
+    "value": "Passenger lift min size: 1.1m × 2.0m; Fire lift required for buildings over 15m",
+    "source": "NBC Part 4 & 3"
+  },
+  {
+    "type": "mechanical_parking",
+    "value": "Allowed with layout approval; 1.5x space factor applies to mechanical slots",
+    "source": "KMBR Rule 29.3"
+  },
+  {
+    "type": "basement_use",
+    "value": "Permitted only for parking, storage, HVAC and services. Retail or food courts not allowed in basements",
+    "source": "KMBR Rule 30"
+  },
+  {
+    "type": "ventilation",
+    "value": "Minimum 1/10th of floor area must be naturally ventilated or provided with mechanical ventilation",
+    "source": "NBC Part 8"
+  },
+  {
+    "type": "drainage",
+    "value": "Rainwater to percolation pits or recharge wells; Stormwater should not be connected to sewer lines",
+    "source": "KMBR Rule 28"
+  },
+  {
+    "type": "signage",
+    "value": "Commercial signage not to exceed 25% of facade; Should not block fire exits or emergency signage",
+    "source": "KMBR Rule 38.2"
+  },
+  {
+    "type": "security",
+    "value": "Malls must have CCTV surveillance, fire alarm control panels, emergency exits, and public address systems",
+    "source": "NBC + Kerala Police Fire & Safety Notification"
+  },
+  {
+    "type": "rainwater_harvesting",
+    "value": "Mandatory for plots over 200 sqm; recharge pits or storage tanks must be integrated",
+    "source": "KMBR Rule 28.2"
+  }
+],
+
+        "industrial": [
+            {
+                "type": "setback",
+                "value": "Front: 9m; Sides/Rear: 4.5m; Add 0.5m every 3m above 10m height",
+                "source": "KMBR Rule 25"
+            },
+            {
+                "type": "coverage",
+                "value": "Max 50% of plot area",
+                "source": "KMBR Table 6"
+            },
+            {
+                "type": "far",
+                "value": "F.S.I. up to 2.0 without fee, 2.5 with premium",
+                "source": "KMBR Table 6"
+            },
+            {
+                "type": "parking",
+                "value": "1 space per 150 sqm of built-up area",
+                "source": "KMBR Table 10 – Group G"
+            },
+            {
+                "type": "fire_safety",
+                "value": "Minimum 2 staircases, fire alarms, hydrants and smoke detectors mandatory. Buildings over 15m require fire lift",
+                "source": "NBC Part 4 – Fire Safety"
+            },
+            {
+                "type": "stp",
+                "value": "STP required for any industrial premises with more than 50 workers or over 5000 sqm built-up area",
+                "source": "KMBR Rule 27.5"
+            },
+            {
+                "type": "hazard_buffer",
+                "value": "Minimum 15m buffer zone required between industrial buildings and residential plots",
+                "source": "KMBR Rule 34"
+            },
+            {
+                "type": "mechanical_parking",
+                "value": "Permitted with approval and 1.5x space factor; layout must be submitted",
+                "source": "KMBR Rule 29.3"
+            },
+            {
+                "type": "energy_compliance",
+                "value": "ECBC compliance mandatory for built-up area >1000 sqm",
+                "source": "KMBR Rule 5(5)"
+            },
+            {
+                "type": "lighting_ventilation",
+                "value": "1/10th of floor area should be openable windows for cross ventilation",
+                "source": "NBC Part 8 – Lighting & Ventilation"
+            },
+            {
+                "type": "toilets",
+                "equation": {
+                    "male": "1 per 25 workers",
+                    "female": "1 per 15 workers"
+                },
+                "source": "NBC Part 9 – Sanitation"
+            },
+            {
+                "type": "basement_use",
+                "value": "Basement allowed only for utilities, services and parking; no hazardous material storage",
+                "source": "KMBR Rule 30"
+            },
+            {
+                "type": "waste_disposal",
+                "value": "Industrial waste must be disposed as per Pollution Control Board norms. Public drains must not be used",
+                "source": "KMBR Rule 28"
+            }
+        ],
+"educational": [
+  {
+    "type": "setback",
+    "value": "Front: 6m; Sides/Rear: 3m; Add 0.5m for every 3m above 10m height",
+    "source": "KMBR Rule 25"
+  },
+  {
+    "type": "coverage",
+    "value": "Max 60% of the plot area",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "far",
+    "value": "F.S.I. up to 2.5 without premium; up to 3.5 with premium",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "parking",
+    "value": "1 space per 100 sqm built-up area or 1 per 20 students (whichever is higher)",
+    "source": "KMBR Table 10 – Group B"
+  },
+  {
+    "type": "toilets",
+    "equation": {
+      "students_male": "1 per 45 boys + 1 urinal per 20 boys",
+      "students_female": "1 per 25 girls",
+      "staff": "1 per 25 staff (gender-wise)"
+    },
+    "source": "NBC Part 9 – Sanitation (Table 14)"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Min 2 staircases, fire alarms, extinguishers, smoke detection, fire lift above 15m",
+    "source": "NBC Part 4 – Fire Safety"
+  },
+  {
+    "type": "accessibility",
+    "value": "Ramps slope 1:12, handrails, lift for buildings >3 floors, 1 accessible toilet per floor",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "recreational_space",
+    "value": "Minimum 20% of total area must be open space for sports/playground",
+    "source": "General Educational Building Guidelines"
+  },
+  {
+    "type": "stp",
+    "value": "STP mandatory if built-up exceeds 5000 sqm or >1000 students",
+    "source": "KMBR Rule 27.5"
+  },
+  {
+    "type": "rainwater_harvesting",
+    "value": "Mandatory for plots >200 sqm; recharge pits or collection tanks required",
+    "source": "KMBR Rule 28.2"
+  },
+  {
+    "type": "lighting_ventilation",
+    "value": "Minimum 1/10th of floor area must be openable windows for light/air circulation",
+    "source": "NBC Part 8"
+  },
+  {
+    "type": "basement_use",
+    "value": "Only for parking and utilities; no classrooms or labs allowed",
+    "source": "KMBR Rule 30"
+  },
+  {
+    "type": "energy_compliance",
+    "value": "ECBC compliance required for built-up area >1000 sqm",
+    "source": "KMBR Rule 5(5)"
+  },
+  {
+    "type": "lift_specifications",
+    "value": "Min lift cabin size: 1.1m width × 2m depth; fire lift mandatory above 15m",
+    "source": "NBC Part 3 & 4"
+  },
+  {
+    "type": "signage",
+    "value": "Floor maps, fire exits, evacuation plans must be displayed; Braille signage required",
+    "source": "NBC + UGC/AICTE guidelines"
+  },
+  {
+    "type": "health_safety",
+    "value": "Mandatory sick room, first-aid room, and drinking water provisions",
+    "source": "AICTE/CBSE School Safety Manual"
+  }
+],
+
+"office": [
+  {
+    "type": "setback",
+    "value": "Front: 6m; Sides and Rear: 3m; Add 0.5m per 3m height above 10m",
+    "source": "KMBR Rule 25"
+  },
+  {
+    "type": "coverage",
+    "value": "Maximum 60% of the plot area",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "far",
+    "value": "F.S.I. up to 3 without fee, 3.5 with premium FAR",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "parking",
+    "value": "1 space per 75 sqm of built-up area; 1 visitor parking per 1000 sqm",
+    "source": "KMBR Table 10 – Group E"
+  },
+  {
+    "type": "toilets",
+    "equation": {
+      "male": "1 per 25 employees + 1 urinal per 50",
+      "female": "1 per 15 employees"
+    },
+    "source": "NBC Part 9 – Sanitation"
+  },
+  {
+    "type": "accessibility",
+    "value": "Ramp 1:12, lift required above 3 floors, 1 accessible toilet per floor, minimum door width 90cm",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Emergency staircases, fire alarms, extinguishers, smoke detectors; fire lift mandatory if height >15m",
+    "source": "NBC Part 4 – Fire Safety"
+  },
+  {
+    "type": "lighting_ventilation",
+    "value": "1/10th of floor area to be windows/openings; mechanical exhaust where natural ventilation not possible",
+    "source": "NBC Part 8 – Lighting & Ventilation"
+  },
+  {
+    "type": "occupancy_load",
+    "equation": "floor_area / 10",
+    "unit": "persons",
+    "source": "NBC Part 4 – Table 1"
+  },
+  {
+    "type": "basement_use",
+    "value": "Only for parking, services, HVAC, archives; not permitted for regular working space",
+    "source": "KMBR Rule 30"
+  },
+  {
+    "type": "stp",
+    "value": "Required if built-up area exceeds 5000 sqm or occupancy exceeds 200 people",
+    "source": "KMBR Rule 27.5"
+  },
+  {
+    "type": "energy_compliance",
+    "value": "Mandatory ECBC compliance for built-up area over 1000 sqm",
+    "source": "KMBR Rule 5(5)"
+  },
+  {
+    "type": "signage",
+    "value": "Emergency exit signs, floor plans, and directional signage on each floor",
+    "source": "NBC Part 4 – Section 3.3"
+  },
+  {
+    "type": "mechanical_parking",
+    "value": "Allowed with layout approval; 1.5x multiplier required for mechanical slots",
+    "source": "KMBR Rule 29.3"
+  },
+  {
+    "type": "emergency_power",
+    "value": "Backup power for exit lighting, lifts, and fire alarm systems is mandatory",
+    "source": "NBC Part 4 – Section 6"
+  },
+  {
+    "type": "green_space",
+    "value": "Minimum 10% of the plot area to be landscaped or used as open recreational space",
+    "source": "KMBR Landscaping Guidelines"
+  }
+],
+
+       "assembly": [
+  {
+    "type": "setback",
+    "value": "Front: 9m; Sides and Rear: 6m minimum; Add 0.5m every 3m above 10m height",
+    "source": "KMBR Rule 25"
+  },
+  {
+    "type": "coverage",
+    "value": "Max 50% of the plot area",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "far",
+    "value": "Max F.S.I. 2.5; higher allowed with premium FAR in urban zones",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "parking",
+    "value": "1 space per 20 seats or 1 per 40 sqm built-up area (whichever is greater)",
+    "source": "KMBR Table 10 – Group D"
+  },
+  {
+    "type": "toilets",
+    "equation": {
+      "male": "1 per 50 persons + 1 urinal per 25",
+      "female": "1 per 30 persons"
+    },
+    "source": "NBC Part 9 – Table 17"
+  },
+  {
+    "type": "occupancy_load",
+    "equation": "floor_area / 1.2",
+    "unit": "persons",
+    "source": "NBC Part 4 – Table 1"
+  },
+  {
+    "type": "fire_safety",
+    "value": "At least 2 staircases, emergency exits with signage, fire alarms, extinguishers, and smoke detectors. Fire lift mandatory for buildings >15m",
+    "source": "NBC Part 4"
+  },
+  {
+    "type": "accessibility",
+    "value": "Ramps 1:12, accessible toilets on all floors, lift min width 1.1m, visual + tactile signage",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "stage_safety",
+    "value": "Stage area must have fire curtain and smoke vent; fire-resistant material only",
+    "source": "NBC Part 4 – Assembly Stage Guidelines"
+  },
+  {
+    "type": "ventilation",
+    "value": "Natural ventilation or mechanical exhaust system mandatory; window area ≥ 1/10th of floor area",
+    "source": "NBC Part 8"
+  },
+  {
+    "type": "basement_use",
+    "value": "Only for parking and building services; not allowed for audience seating or public assembly",
+    "source": "KMBR Rule 30"
+  },
+  {
+    "type": "stp",
+    "value": "Mandatory for buildings over 5000 sqm or having occupancy >1000 persons",
+    "source": "KMBR Rule 27.5"
+  },
+  {
+    "type": "energy_compliance",
+    "value": "ECBC compliance required for all buildings over 1000 sqm",
+    "source": "KMBR Rule 5(5)"
+  },
+  {
+    "type": "signage",
+    "value": "All exits must have glow-in-dark signage; floor plans and evacuation routes must be displayed on every floor",
+    "source": "NBC Part 4 – Section 3.3"
+  },
+  {
+    "type": "emergency_power",
+    "value": "Emergency lighting and backup generator required for fire equipment and exit lighting",
+    "source": "NBC Part 4 – Section 6.1"
+  },
+  {
+    "type": "green_space",
+    "value": "Minimum 10% of total area to be landscaped/open area for public movement and safety",
+    "source": "KMBR Landscaping Guidelines"
+  }
+],
+"mercantile": [
+  {
+    "type": "setback",
+    "value": "Front: 6m; Sides and Rear: 3m minimum; Add 0.5m for every 3m height above 10m",
+    "source": "KMBR Rule 25"
+  },
+  {
+    "type": "coverage",
+    "value": "Max 65% of plot area",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "far",
+    "value": "F.S.I. up to 3 without premium; up to 4 with premium FAR",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "parking",
+    "value": "1 space per 100 sqm built-up area; visitor parking 1 per 500 sqm",
+    "source": "KMBR Table 10 – Group F"
+  },
+  {
+    "type": "toilets",
+    "equation": {
+      "male": "1 per 25 persons + 1 urinal per 50",
+      "female": "1 per 15 persons"
+    },
+    "source": "NBC Part 9 – Sanitation"
+  },
+  {
+    "type": "occupancy_load",
+    "equation": "floor_area / 3",
+    "unit": "persons",
+    "source": "NBC Part 4 – Table 1"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Minimum 2 staircases, fire lift above 15m, fire extinguishers, alarms, detectors, and sprinklers as per height & floor area",
+    "source": "NBC Part 4 – Fire Safety"
+  },
+  {
+    "type": "accessibility",
+    "value": "Ramp slope 1:12, lift required above 3 floors, accessible toilets on each floor",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "energy_compliance",
+    "value": "ECBC mandatory for buildings over 1000 sqm built-up area",
+    "source": "KMBR Rule 5(5)"
+  },
+  {
+    "type": "ventilation",
+    "value": "Natural ventilation or mechanical exhaust; window area ≥ 1/10th of floor area",
+    "source": "NBC Part 8 – Lighting & Ventilation"
+  },
+  {
+    "type": "signage",
+    "value": "Commercial signage max 25% of facade; must not obstruct emergency routes",
+    "source": "KMBR Rule 38.2"
+  },
+  {
+    "type": "basement_use",
+    "value": "Only for parking and services; retail use in basement not permitted",
+    "source": "KMBR Rule 30"
+  },
+  {
+    "type": "mechanical_parking",
+    "value": "Allowed with 1.5x multiplier and layout approval",
+    "source": "KMBR Rule 29.3"
+  },
+  {
+    "type": "loading_bay",
+    "value": "1 loading/unloading bay per 1000 sqm above 700 sqm threshold",
+    "source": "KMBR Rule 29"
+  },
+  {
+    "type": "stp",
+    "value": "Mandatory for plots over 5000 sqm or occupancy > 1000",
+    "source": "KMBR Rule 27.5"
+  },
+  {
+    "type": "emergency_power",
+    "value": "Backup power required for emergency lights, fire systems, and lift",
+    "source": "NBC Part 4 – Section 6"
+  }
+],
+"industrial": [
+  {
+    "type": "setback",
+    "value": "Front: 9m; Sides/Rear: 4.5m; Add 0.5m for every 3m above 10m",
+    "source": "KMBR Rule 25"
+  },
+  {
+    "type": "coverage",
+    "value": "Max 50% of plot area",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "far",
+    "value": "F.S.I. up to 2.0 without premium, 2.5 with premium",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "parking",
+    "value": "1 space per 150 sqm built-up area; separate loading/unloading zone",
+    "source": "KMBR Table 10 – Group G"
+  },
+  {
+    "type": "hazard_buffer",
+    "value": "Minimum 15m buffer zone between industrial and residential buildings",
+    "source": "KMBR Rule 34"
+  },
+  {
+    "type": "toilets",
+    "equation": {
+      "male": "1 per 25 workers",
+      "female": "1 per 15 workers"
+    },
+    "source": "NBC Part 9 – Sanitation"
+  },
+  {
+    "type": "stp",
+    "value": "Required for industrial units over 5000 sqm or employing >50 workers",
+    "source": "KMBR Rule 27.5"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Fire alarms, detectors, hydrants; fire lift for >15m; evacuation plan mandatory",
+    "source": "NBC Part 4 – Fire Safety"
+  },
+  {
+    "type": "waste_disposal",
+    "value": "Disposal as per PCB norms; public drainage must not be used",
+    "source": "KMBR Rule 28"
+  },
+  {
+    "type": "accessibility",
+    "value": "Ramp slope 1:12, accessible toilets and entries required for office blocks",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "basement_use",
+    "value": "Basement allowed only for utilities and parking; no hazardous storage",
+    "source": "KMBR Rule 30"
+  },
+  {
+    "type": "energy_compliance",
+    "value": "Mandatory ECBC compliance for built-up area >1000 sqm",
+    "source": "KMBR Rule 5(5)"
+  },
+  {
+    "type": "ventilation",
+    "value": "Natural cross ventilation or mechanical exhausts required in work areas",
+    "source": "NBC Part 8 – Lighting & Ventilation"
+  },
+  {
+    "type": "lighting",
+    "value": "Minimum 1/10th of floor area for window openings; factory lighting as per IS codes",
+    "source": "NBC Part 8"
+  },
+  {
+    "type": "mechanical_parking",
+    "value": "Permitted with layout approval and 1.5x multiplier rule",
+    "source": "KMBR Rule 29.3"
+  },
+  {
+    "type": "signage",
+    "value": "Industrial signage must indicate emergency exits and hazard zones clearly",
+    "source": "KMBR Rule 38.2 + NBC"
+  }
+],
+
+
+       "storage": [
+  {
+    "type": "setback",
+    "value": "Front: 6m; Sides/Rear: 3m minimum; add 0.5m for every 3m above 10m height",
+    "source": "KMBR Rule 25"
+  },
+  {
+    "type": "coverage",
+    "value": "Max 50% of plot area",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "far",
+    "value": "Max F.S.I. = 1.5",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "parking",
+    "value": "1 space per 100 sqm or 1 per 3 workers (whichever is greater); loading bay mandatory",
+    "source": "KMBR Table 10 – Group H"
+  },
+  {
+    "type": "toilets",
+    "equation": {
+      "male": "1 per 25 workers",
+      "female": "1 per 15 workers"
+    },
+    "source": "NBC Part 9 – Sanitation"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Fire extinguishers, smoke detectors, hydrants every 250 sqm; sprinkler system for >500 sqm",
+    "source": "NBC Part 4"
+  },
+  {
+    "type": "basement_use",
+    "value": "Permitted for storage of non-hazardous items only; proper ventilation mandatory",
+    "source": "KMBR Rule 30"
+  },
+  {
+    "type": "ventilation",
+    "value": "Natural cross ventilation or mechanical exhaust fans mandatory",
+    "source": "NBC Part 8 – Lighting & Ventilation"
+  },
+  {
+    "type": "drainage",
+    "value": "Separate drainage required for any waste discharge; stormwater must be filtered",
+    "source": "KMBR Rule 28"
+  },
+  {
+    "type": "waste_disposal",
+    "value": "Must follow PCB waste handling standards; no dumping in public drains",
+    "source": "KMBR Rule 28 + PCB"
+  },
+  {
+    "type": "loading_unloading",
+    "value": "Minimum 1 loading bay per 1000 sqm storage area; access road for trucks mandatory",
+    "source": "KMBR Rule 29"
+  },
+  {
+    "type": "lighting",
+    "value": "At least 1/10th floor area as openable window or mechanical lighting as per IS codes",
+    "source": "NBC Part 8"
+  },
+  {
+    "type": "signage",
+    "value": "Storage areas must be clearly labeled; emergency exit signs mandatory",
+    "source": "NBC + KMBR Rule 38.2"
+  }
+],
+
+       "hazardous": [
+  {
+    "type": "classification",
+    "value": "Covers buildings handling explosives, flammable liquids, radioactive or corrosive materials",
+    "source": "KMBR Chapter 3 – Group I"
+  },
+  {
+    "type": "permission",
+    "value": "Mandatory clearance from Explosives Dept., Pollution Control Board, and Fire & Rescue Dept.",
+    "source": "KMBR Rule 24"
+  },
+  {
+    "type": "setback",
+    "value": "Minimum 9m on all sides; additional 15m buffer from residential areas",
+    "source": "KMBR Rule 34"
+  },
+  {
+    "type": "hazard_buffer",
+    "value": "Green belt or wall buffer zone of 15m mandatory around facility",
+    "source": "KMBR Rule 34"
+  },
+  {
+    "type": "far",
+    "value": "Max F.S.I. = 1.0 for hazardous structures",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "coverage",
+    "value": "Max 40% of plot area",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Explosion-proof fittings, gas sensors, fire tanks, hydrants, and high-pressure sprinkler systems mandatory",
+    "source": "NBC Part 4 + Petroleum Rules + KMBR"
+  },
+  {
+    "type": "ventilation",
+    "value": "Mechanical ventilation with exhaust fans and gas leak detectors mandatory",
+    "source": "NBC Part 8 – Ventilation"
+  },
+  {
+    "type": "accessibility",
+    "value": "Emergency exits, wide pathways, and proper signage required; no public access",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "waste_disposal",
+    "value": "Hazardous waste must be treated/disposed as per PCB guidelines; no mixing with municipal waste",
+    "source": "KMBR Rule 28 + PCB Rules"
+  },
+  {
+    "type": "basement_use",
+    "value": "Prohibited for hazardous materials storage or operations",
+    "source": "KMBR Rule 30"
+  },
+  {
+    "type": "lighting",
+    "value": "Only flameproof electrical systems allowed in critical areas",
+    "source": "NBC Part 8 + Electrical Code"
+  },
+  {
+    "type": "training",
+    "value": "Staff must undergo fire safety and chemical handling training with mock drills every 6 months",
+    "source": "Factory Act + NBC + KMBR"
+  },
+  {
+    "type": "drainage",
+    "value": "Chemical spills must not enter storm drains; interceptors and traps required",
+    "source": "KMBR Rule 28 + Environmental Rules"
+  },
+  {
+    "type": "signage",
+    "value": "Danger symbols, material hazard info, emergency contact numbers must be displayed",
+    "source": "NBC + Petroleum Act"
+  }
+],
+"multiplex": [
+  {
+    "type": "setback",
+    "value": "Front: 9m; Sides/Rear: 6m minimum; add 0.5m for every 3m above 15m height",
+    "source": "KMBR Rule 25"
+  },
+  {
+    "type": "far",
+    "value": "F.S.I. up to 2.5; premium FSI allowed up to 3.5 with conditions",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "coverage",
+    "value": "Maximum 55% of plot area",
+    "source": "KMBR Table 6"
+  },
+  {
+    "type": "parking",
+    "value": "1 car space per 10 seats or 1 per 40 sqm built-up area; separate visitor parking mandatory",
+    "source": "KMBR Table 10 – Group J"
+  },
+  {
+    "type": "toilets",
+    "equation": {
+      "male": "1 per 50 seats",
+      "female": "1 per 25 seats"
+    },
+    "source": "NBC Part 9 – Sanitation"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Separate fire exits for each screen, 3 staircases minimum, fire lift and sprinklers mandatory over 15m",
+    "source": "NBC Part 4 – Fire Safety"
+  },
+  {
+    "type": "accessibility",
+    "value": "At least 1 accessible toilet and seating space per screen; ramp slope 1:12; lift width ≥ 1.1m",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "occupancy_load",
+    "equation": "1 person per seat; include lobby and corridor spaces",
+    "unit": "persons",
+    "source": "NBC Part 4 – Table 1"
+  },
+  {
+    "type": "basement_use",
+    "value": "Permitted for parking, HVAC, or green rooms; not for auditoriums or food courts",
+    "source": "KMBR Rule 30"
+  },
+  {
+    "type": "mechanical_parking",
+    "value": "Allowed with 1.5x compensation ratio and detailed approval layout",
+    "source": "KMBR Rule 29.3"
+  },
+  {
+    "type": "soundproofing",
+    "value": "Auditoriums must be acoustically treated to 55 dB reduction or better",
+    "source": "NBC + IS 2526"
+  },
+  {
+    "type": "lighting_ventilation",
+    "value": "Minimum 1/10th area natural lighting for non-auditorium areas; HVAC for enclosed spaces",
+    "source": "NBC Part 8"
+  },
+  {
+    "type": "signage",
+    "value": "Emergency signs, fire exit symbols, auditorium indicators must be clearly visible",
+    "source": "KMBR Rule 38.2 + NBC"
+  },
+  {
+    "type": "drainage",
+    "value": "Sewage must connect to STP if >5000 sqm built-up; stormwater handled separately",
+    "source": "KMBR Rule 28"
+  },
+  {
+    "type": "energy_compliance",
+    "value": "ECBC compliance mandatory for auditoriums >1000 sqm",
+    "source": "KMBR Rule 5(5)"
+  }
+],
+
+"temporary_structures": [
+  {
+    "type": "validity",
+    "value": "Initial permission valid for 90 days; extendable up to 6 months with prior approval",
+    "source": "KMBR Rule 18"
+  },
+  {
+    "type": "construction",
+    "value": "Only lightweight, non-permanent materials allowed (e.g., steel frames, metal sheets, tents, tarpaulin)",
+    "source": "KMBR Rule 18"
+  },
+  {
+    "type": "location_restrictions",
+    "value": "Not permitted on road margins, drainage paths, parks, or public land",
+    "source": "KMBR Rule 19"
+  },
+  {
+    "type": "setback",
+    "value": "Minimum 1.5m setback from all plot boundaries",
+    "source": "KMBR Rule 25 (applicable for temp structures)"
+  },
+  {
+    "type": "use_case",
+    "value": "Permitted for exhibitions, religious festivals, site offices, and temporary sheds",
+    "source": "KMBR Rule 18"
+  },
+  {
+    "type": "fire_safety",
+    "value": "Fire extinguishers and emergency exits mandatory for all structures >100 sqm",
+    "source": "NBC Part 4 – Fire Safety"
+  },
+  {
+    "type": "occupancy_limit",
+    "equation": "1 person per 2.5 sqm of area",
+    "unit": "persons",
+    "source": "NBC Part 4 – Table 1"
+  },
+  {
+    "type": "toilets",
+    "equation": {
+      "male": "1 per 50 persons",
+      "female": "1 per 30 persons"
+    },
+    "source": "NBC Part 9 – Sanitation"
+  },
+  {
+    "type": "structural_safety",
+    "value": "Structure must withstand wind loads as per IS 875; no permanent foundation allowed",
+    "source": "NBC + IS 875"
+  },
+  {
+    "type": "lighting",
+    "value": "Only temporary and insulated wiring allowed; no underground wiring permitted",
+    "source": "NBC + Kerala Electrical Safety Rules"
+  },
+  {
+    "type": "environmental_clearance",
+    "value": "Waste disposal and drainage must follow municipal rules; open burning of waste prohibited",
+    "source": "Municipality Act + KMBR Rule 28"
+  },
+  {
+    "type": "accessibility",
+    "value": "At least 1 ramp access required for public stalls over 150 sqm; slope 1:12",
+    "source": "NBC Part 3 – Accessibility"
+  },
+  {
+    "type": "removal_obligation",
+    "value": "Structure must be dismantled completely after validity expiration",
+    "source": "KMBR Rule 18"
+  }
+]
+
+
+    }
+}
